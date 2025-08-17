@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistema Invadido (zuera)</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.6rem;
+      animation: flash 20ms infinite steps(1, end);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Color Emoji", "Apple Color Emoji", sans-serif;
+      text-align: center;
+      user-select: none;
+    }
+
+    @keyframes flash {
+      0%   { background: #ff0000; color: #ffffff; }
+      33%  { background: #000000; color: #ffffff; }
+      66%  { background: #ffffff; color: #ff0000; }
+      100% { background: #ff0000; color: #ffffff; }
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      font-size: clamp(2.2rem, 8vw, 6rem);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 8px rgba(0,0,0,.35);
+    }
+
+    .small {
+      font-size: clamp(1rem, 2.8vw, 1.5rem);
+      opacity: 0.95;
+      background: rgba(255,255,255,.15);
+      padding: .35em .75em;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>SEU SISTEMA FOI INVADIDO 😭🙏🏼🥀</h1>
+  <div class="small">É Zuera seu bobo ahahha</div>
+
+  <!-- Música automática -->
+  <audio autoplay loop>
+    <source src="assets/scary-laugh-377526.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
